@@ -1,0 +1,12 @@
+#first_name::placeholder {
+    color: rgb(167, 167, 167)
+}
+
+.space {
+    margin-top: 20px;
+}
+
+form legend {
+    font-size: 12px;
+    color:darkgrey
+}
