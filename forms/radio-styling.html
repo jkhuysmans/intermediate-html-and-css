@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Advanced styling: Task 2</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      button,
+      input,
+      select {
+        font-family: inherit;
+        font-size: 100%;
+        padding: 0; margin: 0;
+      }
+
+      input[type="radio"] {
+        appearance: none;
+      }
+
+      div {
+        display: flex;
+      }
+
+      label {
+        margin-left: 25px;
+      }
+
+      input[type="radio"]::before {
+        position:fixed;
+        content: "✔";      
+        font-size: 1px;
+        color: #ffffff;
+        width: 18px;
+        height: 18px;
+        line-height: 20px;
+        text-align: center;
+        border: 1px solid grey;
+        border-radius: 12px;
+        margin-right: 10px;
+        transition: font-size 0.2s ease;
+      }
+
+      input[type="radio"]:checked::before {
+        color: black;
+        font-size:20px;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <fieldset>
+        <legend>Who is your favorite pony?</legend>
+        <ul>
+          <li>
+            <div>
+            <input type="radio" id="pinkie" name="pony" value="pinkie">
+            <label for="pinkie">Pinkie Pie</label></div>
+          </li>
+          <li>
+            <div>
+            <input type="radio" id="rainbow" name="pony" value="rainbow">
+            <label for="rainbow">Rainbow Dash</label></div>
+          </li>
+          <li>
+            <div>
+            <input type="radio" id="twilight" name="pony" value="twilight">
+            <label for="twilight">Twilight Sparkle</label></div>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </body>
+
+</html>
