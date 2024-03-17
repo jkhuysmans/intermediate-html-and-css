@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Advanced styling: Task 1</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      button,
+      input,
+      select {
+        font-family: inherit;
+        font-size: 100%;
+        padding: 0; margin: 0;
+      }
+
+      input[type="search"] {
+        appearance: none;
+        height:1.5rem;
+        width:15rem;
+        border: 2px solid #181818;
+        border-radius:8px;
+      }
+
+      input[type="search"]:focus {
+        outline: none; /* Remove default focus outline */
+        border-color: rgb(90, 90, 90); /* Custom focus style */
+        box-shadow: 0 0 0 2px rgba(95, 95, 85, 0.5); /* Additional custom focus indication */
+        }
+
+      input + div {
+        width:24px;
+        height:24px;
+        background-image: url('search-24px.png');
+        margin-left: 4px;
+      }
+
+      form {
+        display: flex;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <input type="search" name="search" id="search" aria-label="Search our site">
+      <div></div>
+    </form>
+  </body>
+
+</html>

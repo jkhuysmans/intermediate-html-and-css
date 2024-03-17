@@ -65,11 +65,15 @@ button {
     width: 180px;
     border: 1px solid var(--border-color);
     border-radius: 12px;
-    transition: all 0.1s;
+    transition: all 0.07s;
 }
 
 button:hover {
     filter: brightness(0.8);
+}
+
+button:active {
+    filter: brightness(0.7);
 }
 
 li {
